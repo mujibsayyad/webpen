@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Editor from './components/Editor';
+import useLocalStorage from './components/hooks/useLocalStorage';
 
 import { html } from '@codemirror/lang-html';
 import { css } from '@codemirror/lang-css';
@@ -8,9 +9,9 @@ import { javascript } from '@codemirror/lang-javascript';
 import './App.css';
 
 function App() {
-  const [htmlCode, setHtmlCode] = useState('');
-  const [cssCode, setCSSCode] = useState('');
-  const [jsCode, setJSCode] = useState('');
+  const [htmlCode, setHtmlCode] = useLocalStorage('html', '');
+  const [cssCode, setCSSCode] = useLocalStorage('css', '');
+  const [jsCode, setJSCode] = useLocalStorage('js', '');
   const [srcDoc, setSrcDoc] = useState('');
 
   useEffect(() => {

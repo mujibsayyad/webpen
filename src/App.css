@@ -1,6 +1,7 @@
 iframe {
-  height: 64vh;
+  height: 65vh;
   border: none;
+  position: relative;
 }
 
 .panel {
@@ -8,6 +9,7 @@ iframe {
   justify-content: space-between;
   border-bottom: 10px solid blueviolet;
   border-radius: 5px;
+  position: relative;
 }
 
 .panel-bottom {
@@ -79,6 +81,9 @@ footer {
   padding: 0.5rem;
   background-color: rgb(93, 18, 163);
   color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {

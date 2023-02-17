@@ -3,9 +3,6 @@ import { useState, useEffect } from 'react';
 let PREFIX = 'webpen';
 
 const useLocalStorage = (key, initialValue) => {
-  let i = 0;
-  console.log('🚀 useLocalStorage rendered', i++);
-
   let prefixKey = PREFIX + key;
 
   const [value, setValue] = useState(() => {
